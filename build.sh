@@ -16,7 +16,7 @@ echo $(git branch)
 sed -i "s/{HOSTNAME}/$HOSTNAME/g" web/index.html
 sed -i "s/{USER}/$USER/g" web/index.html
 sed -i "s/{GIT_BRANCH}/$(git rev-parse --abbrev-ref HEAD)/g" web/index.html
-sed -i "s/{PWD}/$pwd/g" web/index.html
+sed -i "s/{PWD}/$(pwd)/g" web/index.html
 sed -i "s/{AZURE_VARIABLE}/$TEST/g" web/index.html
 
 
