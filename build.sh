@@ -7,8 +7,9 @@ echo "Building a webpage..."
 SERVER_NAME=$SEVER_NAME
 
 echo "This is $HOSTNAME"
-echo $(pwd)
 dir=$pwd
+
+echo $dir
  
 
 
