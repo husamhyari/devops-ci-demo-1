@@ -5,6 +5,7 @@ echo "Building a webpage..."
 
 # Declare and initialize values
 SERVER_NAME=$SEVER_NAME
+
 echo "This is $HOSTNAME"
 echo $(pwd)
 git branch 
@@ -14,8 +15,8 @@ git config --get remote.origin.url
 echo $(git branch)
 sed -i "s/{HOSTNAME}/$HOSTNAME/g" web/index.html
 sed -i "s/{USER}/$USER/g" web/index.html
-sed -i "s/{PWD}/$PWD/g" web/index.html
-sed -i "s/{PWD}/$PWD/g" web/index.html
+sed -i "s/{GIT_BRANCH}/$(git rev-parse --abbrev-ref HEAD)/g" web/index.html
+sed -i "s/{PWD}/$pwd/g" web/index.html
 sed -i "s/{AZURE_VARIABLE}/$TEST/g" web/index.html
 
 
