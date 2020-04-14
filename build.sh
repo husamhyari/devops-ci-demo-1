@@ -7,6 +7,7 @@ echo "Building a webpage..."
 SERVER_NAME=$SEVER_NAME
 echo "This is $HOSTNAME"
 echo $(pwd)
+sed 's/{HOSTNAME}/$HOSTNAME/g'
 
 # Replace values in index.html
 ## TODO: Replace {SEVER_NAME} with $SEVER_NAME
