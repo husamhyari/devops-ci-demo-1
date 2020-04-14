@@ -21,6 +21,7 @@ steps:
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
+  
 
 # Start the deployment process
 - task: CopyFilesOverSSH@0
