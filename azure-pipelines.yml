@@ -25,10 +25,11 @@ steps:
 # Start the deployment process
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'su-uesr@13.92.23.127'
+    sshEndpoint: 'arabyat-su-uesr@13.92.23.127'
     sourceFolder: 'web/'
     contents: '**'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
     readyTimeout: '20000'
+    overwrite: false
     failOnEmptySource: true
