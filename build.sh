@@ -10,6 +10,7 @@ echo $(pwd)
 git branch 
 git rev-parse --abbrev-ref HEAD
 git status
+git config --get remote.origin.url
 echo $(git branch)
 sed -i "s/{HOSTNAME}/$HOSTNAME/g" web/index.html
 
