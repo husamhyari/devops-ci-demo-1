@@ -7,6 +7,7 @@ echo "Building a webpage..."
 SERVER_NAME=$SEVER_NAME
 echo "This is $HOSTNAME"
 echo $(pwd)
+git branch 
 echo $(git branch)
 sed -i "s/{HOSTNAME}/$HOSTNAME/g" web/index.html
 
