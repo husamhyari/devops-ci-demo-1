@@ -18,19 +18,8 @@ steps:
 - script: echo Hello, ICT DevOps!
   displayName: 'Say hello'
 
+
+
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
-  
-
-# Start the deployment process
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'arabyat-su-uesr@13.92.23.127'
-    sourceFolder: 'web/'
-    contents: '**'
-    targetFolder: '/var/www/html'
-    cleanTargetFolder: true
-    readyTimeout: '20000'
-    overwrite: false
-    failOnEmptySource: true
