@@ -2,22 +2,17 @@
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
-
 # Triggers
 trigger:
 - master
-
 # Pools
 pool:
   vmImage: 'ubuntu-latest'
-
 # Steps
 steps:
-
 # Say hello
 - script: echo Hello, ICT DevOps!
   displayName: 'Say hello'
-
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
