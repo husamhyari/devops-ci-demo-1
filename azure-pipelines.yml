@@ -11,7 +11,7 @@ pool:
 # Steps
 steps:
 # Say hello
-- script: echo Hello, ICT DevOps!
+- script: echo HUSAM !
   displayName: 'Say hello'
 # Start the build process
 - script: bash build.sh
