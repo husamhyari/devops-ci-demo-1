@@ -19,5 +19,5 @@ steps:
   displayName: 'Run a multi-line script' 
 
 
-- script: bash bulid.ch
+- script: bash bulid .sh
   displayName: 'hello corona'
