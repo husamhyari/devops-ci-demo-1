@@ -11,8 +11,8 @@ pool:
 # Steps
 steps:
 # Say hello
-- script: echo HUSAM !
-  displayName: 'Say hello'
+- script: echo       HUSAM !
+  displayName: 'Say hel00lo'
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
