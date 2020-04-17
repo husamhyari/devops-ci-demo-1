@@ -19,7 +19,7 @@ steps:
 
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'auser@13.82.64.79'
+    sshEndpoint: 'HusaHyari@23.100.19.255'
     sourceFolder: 'web/'
     contents: '**'
     targetFolder: '/var/www/html'
