@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'HusaHyari@23.100.19.255'
-    contents: '**'
-    readyTimeout: '20000'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -16,15 +11,15 @@ pool:
 # Steps
 steps:
 # Say hello
-- script: echo       HUSAM !
-  displayName: 'Say hel00lo'
+- script: echo Hello, ICT DevOps!
+  displayName: 'Say hello'
 # Start the build process
 - script: bash build.sh
   displayName: 'Run build script'
 
 - task: CopyFilesOverSSH@0
   inputs:
-    sshEndpoint: 'HusaHyari@23.100.19.255'
+    sshEndpoint: 'auser@13.82.64.79'
     sourceFolder: 'web/'
     contents: '**'
     targetFolder: '/var/www/html'
